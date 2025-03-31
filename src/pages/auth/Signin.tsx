@@ -8,7 +8,7 @@ import { useState } from "react";
 
 const Signin = () => {
   const [inputType, setInputType] = useState("password");
-  const toggleType = (e) => {
+  const toggleType = () => {
     inputType === "password" ? setInputType("text") : setInputType("password");
   };
   return (
@@ -51,7 +51,7 @@ const Signin = () => {
                       className="focus:border-none focus:outline-none w-full"
                     />
                     {
-                      <button type="button" onClick={(e) => toggleType(e)}>
+                      <button type="button" onClick={() => toggleType()}>
                         {inputType === "password" ? <Eye /> : <EyeOff />}
                       </button>
                     }
