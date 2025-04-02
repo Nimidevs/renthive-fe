@@ -1,15 +1,2 @@
 @import "tailwindcss";
-@keyframes wobble {
-  0% {
-    transform: rotate(-5deg);
-  }
-  50% {
-    transform: rotate(5deg);
-  }
-  100% {
-    transform: rotate(-5deg);
-  }
-}
-.wobble {
-  animation: wobble 2s infinite;
-}
+

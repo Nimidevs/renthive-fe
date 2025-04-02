@@ -9,7 +9,7 @@ import { useState } from "react";
 const Signin = () => {
   const [inputType, setInputType] = useState("password");
   const toggleType = () => {
-    inputType === "password" ? setInputType("text") : setInputType("password");
+    setInputType((prevType) => (prevType === "password" ? "text" : "password"));
   };
   return (
     <div className="h-screen flex flex-row justify-between pr-4 pl-6 py-4 bg-white ">
